@@ -57,9 +57,7 @@ jobs:
         df -hT $PWD
         git clone $REPO_URL
         cd openwrt
-        git pull
-        
-        git checkout ${{ github.ref }}
+        git pull 
 
         cd ..
         ln -sf /workdir/openwrt $GITHUB_WORKSPACE/openwrt
