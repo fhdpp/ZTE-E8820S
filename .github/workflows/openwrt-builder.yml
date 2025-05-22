@@ -12,9 +12,10 @@
 
 name: OpenWrt builder
 
-on: 
+on:
   release:
     types: [published]
+  workflow_dispatch:
 
 env:
   REPO_URL: https://github.com/openwrt/openwrt
